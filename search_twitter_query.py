@@ -80,11 +80,18 @@ def clean_tweet_text(tweet):
 
 # Function to perform a search using Twitter's api and return our explanatory variables.
 def search_twitter_return_ev(query, start_date, end_date):
-    # Twitter API authentication
-    consumer_key = 'GyfyFJEkU6cyGBq0PPLjHlvz0'
-    consumer_secret = 'q3ghkBA8i1qheGFFnpd5mmCmlAlrNIk02wqTqeoQ2gERHiwqLw'
-    access_token = '855727868-h0MenCCakLLaz6engeaIm2mh77j3uoOnN5DIXV07'
-    access_token_secret = 'c4TWPLTCmdx8ijhXS3gkH59Wcv8PGJ8BUFDTFXfT6hMiS'
+
+    # Yusuf: Twitter API authentication
+    # consumer_key = 'GyfyFJEkU6cyGBq0PPLjHlvz0'
+    # consumer_secret = 'q3ghkBA8i1qheGFFnpd5mmCmlAlrNIk02wqTqeoQ2gERHiwqLw'
+    # access_token = '855727868-h0MenCCakLLaz6engeaIm2mh77j3uoOnN5DIXV07'
+    # access_token_secret = 'c4TWPLTCmdx8ijhXS3gkH59Wcv8PGJ8BUFDTFXfT6hMiS'
+
+    # Matt: Twitter API authentication
+    consumer_key = '1iQ8rHkTabqFSEaIujAHqahTW'
+    consumer_secret = 'KxnRmci0bkWpoeFF6lSyR8lzlNmutwDIaMZ6vkXF5moh68vS6v'
+    access_token = '701880260678148096-GkJ6CXuCFLjQYKnQdYl13QZI0Lk49KU'
+    access_token_secret = 'N5rwNAW7Su20FEZW741R0T992vg2xGwfqBNZzNC5FdMal'
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
