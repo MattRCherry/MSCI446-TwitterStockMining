@@ -120,6 +120,7 @@ def search_twitter_return_ev(query, start_date, end_date):
     # Search for tweets matching our query, and add them to our list
     for tweet in limit_handled(tweepy.Cursor(api.search, q=query, lang='en', since=start_date, until=end_date).items()):
 
+        # Only add tweets to our list if they are between our open and close time
         if open_time < tweet.created_at < close_time:
             tweets.append(tweet)
 
