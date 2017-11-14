@@ -81,7 +81,6 @@ def clean_tweet_text(tweet):
 # Function to perform a search using Twitter's api and return our explanatory variables.
 def search_twitter_return_ev(query, start_date, end_date):
 
-
     # Dhruv's Twitter API authentication
     # consumer_key = 'QyPohWOnU5rWBj0p8eitISxZm'
     # consumer_secret = 'Bic1EnxYGOnaZZaNiSz0xW0Kb3Y4RGVhqbfriVP3dgm2xdj2Ln'
