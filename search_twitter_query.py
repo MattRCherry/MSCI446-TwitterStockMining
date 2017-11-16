@@ -78,15 +78,15 @@ def clean_tweet_text(tweet):
     return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t]) | (\w +:\ / \ / \S +)", " ", tweet).split())
 
 
-# Function to perform a search using Twitter's api and return our explanatory variables.
+# Function to perform a search using Twitter's api for all tweets during trading hours and return our explanatory
+# variables.
 def search_twitter_return_ev(query, start_date, end_date):
 
-
     # Dhruv's Twitter API authentication
-    consumer_key = 'QyPohWOnU5rWBj0p8eitISxZm'
-    consumer_secret = 'Bic1EnxYGOnaZZaNiSz0xW0Kb3Y4RGVhqbfriVP3dgm2xdj2Ln'
-    access_token = '383059399-Nv6Z94gW7fMReiyKLGKANTFYay14tFvrB1Ut8c9s'
-    access_token_secret = 'BsM3FhhEkkBYe7q1LPTAHQa1HyZKmhjVkaxdA5hJefwGy'
+    # consumer_key = 'QyPohWOnU5rWBj0p8eitISxZm'
+    # consumer_secret = 'Bic1EnxYGOnaZZaNiSz0xW0Kb3Y4RGVhqbfriVP3dgm2xdj2Ln'
+    # access_token = '383059399-Nv6Z94gW7fMReiyKLGKANTFYay14tFvrB1Ut8c9s'
+    # access_token_secret = 'BsM3FhhEkkBYe7q1LPTAHQa1HyZKmhjVkaxdA5hJefwGy'
 
     # Yusuf's Twitter API authentication
     # consumer_key = 'GyfyFJEkU6cyGBq0PPLjHlvz0'
@@ -95,10 +95,10 @@ def search_twitter_return_ev(query, start_date, end_date):
     # access_token_secret = 'c4TWPLTCmdx8ijhXS3gkH59Wcv8PGJ8BUFDTFXfT6hMiS'
 
     # Matt's Twitter API authentication
-    # consumer_key = '1iQ8rHkTabqFSEaIujAHqahTW'
-    # consumer_secret = 'KxnRmci0bkWpoeFF6lSyR8lzlNmutwDIaMZ6vkXF5moh68vS6v'
-    # access_token = '701880260678148096-GkJ6CXuCFLjQYKnQdYl13QZI0Lk49KU'
-    # access_token_secret = 'N5rwNAW7Su20FEZW741R0T992vg2xGwfqBNZzNC5FdMal'
+    consumer_key = '1iQ8rHkTabqFSEaIujAHqahTW'
+    consumer_secret = 'KxnRmci0bkWpoeFF6lSyR8lzlNmutwDIaMZ6vkXF5moh68vS6v'
+    access_token = '701880260678148096-GkJ6CXuCFLjQYKnQdYl13QZI0Lk49KU'
+    access_token_secret = 'N5rwNAW7Su20FEZW741R0T992vg2xGwfqBNZzNC5FdMal'
 
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -121,7 +121,58 @@ def search_twitter_return_ev(query, start_date, end_date):
     # Search for tweets matching our query, and add them to our list
     for tweet in limit_handled(tweepy.Cursor(api.search, q=query, lang='en', since=start_date, until=end_date).items()):
 
+        # Only add tweets to our list if they are between our open and close time
         if open_time < tweet.created_at < close_time:
+            tweets.append(tweet)
+
+    # Convert our list of tweets into a Pandas data frame
+    tweet_data_frame = to_data_frame(tweets)
+
+    # Calculate the required explanatory variables from the data frame
+    result = data_frame_to_results(query, start_date, tweet_data_frame)
+
+    return result
+
+
+# Function to perform a search using Twitter's api for the 'n' most popular tweets, and return our explanatory
+# variables.
+def search_twitter_return_pop_ev(query, start_date, end_date):
+
+    # Dhruv's Twitter API authentication
+    # consumer_key = 'QyPohWOnU5rWBj0p8eitISxZm'
+    # consumer_secret = 'Bic1EnxYGOnaZZaNiSz0xW0Kb3Y4RGVhqbfriVP3dgm2xdj2Ln'
+    # access_token = '383059399-Nv6Z94gW7fMReiyKLGKANTFYay14tFvrB1Ut8c9s'
+    # access_token_secret = 'BsM3FhhEkkBYe7q1LPTAHQa1HyZKmhjVkaxdA5hJefwGy'
+
+    # Yusuf's Twitter API authentication
+    # consumer_key = 'GyfyFJEkU6cyGBq0PPLjHlvz0'
+    # consumer_secret = 'q3ghkBA8i1qheGFFnpd5mmCmlAlrNIk02wqTqeoQ2gERHiwqLw'
+    # access_token = '855727868-h0MenCCakLLaz6engeaIm2mh77j3uoOnN5DIXV07'
+    # access_token_secret = 'c4TWPLTCmdx8ijhXS3gkH59Wcv8PGJ8BUFDTFXfT6hMiS'
+
+    # Matt's Twitter API authentication
+    consumer_key = '1iQ8rHkTabqFSEaIujAHqahTW'
+    consumer_secret = 'KxnRmci0bkWpoeFF6lSyR8lzlNmutwDIaMZ6vkXF5moh68vS6v'
+    access_token = '701880260678148096-GkJ6CXuCFLjQYKnQdYl13QZI0Lk49KU'
+    access_token_secret = 'N5rwNAW7Su20FEZW741R0T992vg2xGwfqBNZzNC5FdMal'
+
+
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    auth.set_access_token(access_token, access_token_secret)
+
+    api = tweepy.API(auth)
+
+    # Create an empty list to store our tweets
+    tweets = []
+
+    # Create a datetime object with the open and close time for the NASDAQ market.
+    open_time = datetime.strptime(start_date + " 14:00:00", "%Y-%m-%d %H:%M:%S")
+    close_time = datetime.strptime(start_date + " 21:30:00", "%Y-%m-%d %H:%M:%S")
+
+    # Search for tweets matching our query, and add them to our list
+    for tweet in limit_handled(tweepy.Cursor(api.search, q=query, lang='en', since=start_date, until=end_date,
+                                             result_type='popular').items(300)):
+
             tweets.append(tweet)
 
     # Convert our list of tweets into a Pandas data frame
