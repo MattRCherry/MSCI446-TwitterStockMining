@@ -1,5 +1,6 @@
 import pandas as pd
 from search_twitter_query import search_twitter_return_ev
+from search_twitter_query import search_twitter_return_pop_ev
 from datetime import datetime, timedelta
 
 # Where to save the csv output
@@ -24,9 +25,17 @@ tr_data_list = []
 # Run search_twitter_return_ev function for each company-date combination in our lists.
 for company in companies:
     for date in dates:
-        result = search_twitter_return_ev(company,
+
+        # Search Option 1: All trading hour tweets (slower)
+        #result = search_twitter_return_ev(company,
+        #                                  datetime.strftime(date, '%Y-%m-%d'),
+        #                                  datetime.strftime(date + timedelta(days=1), '%Y-%m-%d'))
+
+        # Search Option 2: 'n' most popular tweets (faster, set n in search_twitter_query.py)
+        result = search_twitter_return_pop_ev(company,
                                           datetime.strftime(date, '%Y-%m-%d'),
                                           datetime.strftime(date + timedelta(days=1), '%Y-%m-%d'))
+
         # Append the results to our training data list
         tr_data_list.append(result)
 
