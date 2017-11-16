@@ -109,11 +109,6 @@ def search_twitter_return_ev(query, start_date, end_date):
     # Create an empty list to store our tweets
     tweets = []
 
-    # Sample search parameters, can be used for troubleshooting.
-    # query = "@Intel"
-    # since_q = "2017-11-10"
-    # until_q = "2017-11-11"
-
     # Create a datetime object with the open and close time for the NASDAQ market.
     open_time = datetime.strptime(start_date + " 14:00:00", "%Y-%m-%d %H:%M:%S")
     close_time = datetime.strptime(start_date + " 21:30:00", "%Y-%m-%d %H:%M:%S")
@@ -171,8 +166,7 @@ def search_twitter_return_pop_ev(query, start_date, end_date):
 
     # Search for tweets matching our query, and add them to our list
     for tweet in limit_handled(tweepy.Cursor(api.search, q=query, lang='en', since=start_date, until=end_date,
-                                             result_type='popular').items(300)):
-
+                                             result_type='popular').items(500)):
             tweets.append(tweet)
 
     # Convert our list of tweets into a Pandas data frame
