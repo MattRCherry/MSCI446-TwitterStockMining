@@ -10,7 +10,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn import preprocessing
 
 # read our dataset from csv
-df = pd.read_csv('Training Dataset.csv', index_col=False)
+df = pd.read_csv('standard_dataset_csv.csv', index_col=False)
 
 # isolate the column labels of our explanatory variables
 ev_col_labels = df.columns.values
