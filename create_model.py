@@ -37,9 +37,9 @@ regr.fit(data, df.change)
 # use our model to predict on our overall dataset
 predicted_results = regr.predict(data)
 
-print("Results:")
+print("\nResults:")
 # The coefficients (m, b) of y = m1x1 + m2x2 + ... + b
-print('Coefficients (m): \n', regr.coef_)
+print('Coefficients (m): \n', ev_col_labels, '\n', regr.coef_)
 print('Intercept (b): \n', regr.intercept_)
 
 # The mean square error MSE or the mean residual sum of square of errors
