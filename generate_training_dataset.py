@@ -10,7 +10,7 @@ field_labels = ['company', 'date', 'numTweets', 'avgSubj', 'avgPol', 'medianTime
                 'sumFavorite', 'sumFollowers', 'numVerified']
 
 # Include the twitter handles you would like to collect data for here
-companies = ['@apple', '@microsoft', '@google', '@intel', '@hp', '@cisco', '@ibm', '@amazon', '@oracle', '@xerox']
+companies = ['@cisco']
 
 # Add dates from 'm' to 'n' days ago to a list
 # Change the values in 'range(m, n)' to change the search window
