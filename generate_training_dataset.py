@@ -4,13 +4,13 @@ from search_twitter_query import search_twitter_return_pop_ev
 from datetime import datetime, timedelta
 
 # Where to save the csv output
-file_name = 'results.csv'
+file_name = 'results_2.csv'
 
 field_labels = ['company', 'date', 'numTweets', 'avgSubj', 'avgPol', 'medianTime', 'sumRetweet',
                 'sumFavorite', 'sumFollowers', 'numVerified']
 
 # Include the twitter handles you would like to collect data for here
-companies = ['@google', '@intel', '@xerox', 'cisco']
+companies = ['@apple', '@oracle', '@hp']
 
 # Add dates from 'm' to 'n' days ago to a list
 # Change the values in 'range(m, n)' to change the search window
