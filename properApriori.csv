@@ -1,0 +1,61 @@
+﻿Subj Rank,Pol Rank,Time Rank,numTweets Rank,sumRetweets Rank,sumFaves Rank,sumFollowers Rank,numVerified Rank,change_std Rank
+Very low subjectivity,Low polarity,Early time sent,Very low numTweets,Low sumRetweets,Low sumFaves,Very low sumFollow,Low verif,Big increase
+Low subjectivity,Very low polarity,Very early time sent,High numTweets,High sumRetweets,High sumFaves,Very high sumFollow,High verif,Decrease
+High subjectivity,Low polarity,Early time sent,High numTweets,High sumRetweets,High sumFaves,High sumFollow,High verif,Decrease
+Very low subjectivity,Low polarity,Early time sent,Very high numTweets,Very high sumRetweets,Very high sumFaves,High sumFollow,Very high verif,Increase
+Low subjectivity,Very low polarity,Very early time sent,Very high numTweets,High sumRetweets,High sumFaves,Very high sumFollow,Very high verif,Big decrease
+Low subjectivity,Low polarity,Early time sent,High numTweets,High sumRetweets,High sumFaves,Very high sumFollow,Very high verif,Increase
+Low subjectivity,Very high polarity,Very late time sent,Very high numTweets,Very high sumRetweets,Very high sumFaves,High sumFollow,Very high verif,Decrease
+Very low subjectivity,Very low polarity,Very early time sent,Very high numTweets,Very high sumRetweets,Very high sumFaves,Very high sumFollow,Very high verif,Decrease
+High subjectivity,High polarity,Late time sent,Very high numTweets,Very high sumRetweets,Very high sumFaves,Very high sumFollow,Very high verif,Big increase
+Very high subjectivity,High polarity,Late time sent,Very high numTweets,Very high sumRetweets,Very high sumFaves,Very high sumFollow,Very high verif,Increase
+Very high subjectivity,High polarity,Late time sent,Very high numTweets,Very high sumRetweets,Very high sumFaves,High sumFollow,Very high verif,Big decrease
+Low subjectivity,High polarity,Late time sent,Very low numTweets,Low sumRetweets,Low sumFaves,Low sumFollow,Very low verif,Big decrease
+Very high subjectivity,High polarity,Late time sent,Low numTweets,High sumRetweets,High sumFaves,Very high sumFollow,Very high verif,Big increase
+Very high subjectivity,Very high polarity,Very late time sent,High numTweets,High sumRetweets,High sumFaves,Very high sumFollow,High verif,Increase
+Very high subjectivity,Very high polarity,Very late time sent,Very high numTweets,Very high sumRetweets,High sumFaves,Very high sumFollow,Very high verif,Increase
+Very low subjectivity,Low polarity,Early time sent,Low numTweets,High sumRetweets,High sumFaves,High sumFollow,High verif,Increase
+Very low subjectivity,Very low polarity,Very early time sent,Low numTweets,Very low sumRetweets,Low sumFaves,Very high sumFollow,Very low verif,Decrease
+Low subjectivity,Low polarity,Early time sent,Low numTweets,Very low sumRetweets,Very low sumFaves,Low sumFollow,Very high verif,Big increase
+Very low subjectivity,High polarity,Late time sent,Low numTweets,Very low sumRetweets,Very low sumFaves,Very low sumFollow,Very low verif,Big increase
+High subjectivity,Very high polarity,Very late time sent,High numTweets,Low sumRetweets,Very low sumFaves,Very low sumFollow,Very low verif,Big decrease
+Very low subjectivity,Very low polarity,Very early time sent,Very low numTweets,Very low sumRetweets,Very low sumFaves,Very low sumFollow,Very low verif,Increase
+Very low subjectivity,Very low polarity,Very early time sent,Low numTweets,Low sumRetweets,Low sumFaves,High sumFollow,Low verif,Decrease
+High subjectivity,Very high polarity,Very late time sent,Very low numTweets,Very low sumRetweets,Very low sumFaves,Very low sumFollow,Low verif,Big decrease
+Very low subjectivity,Low polarity,Early time sent,Low numTweets,Low sumRetweets,Low sumFaves,Low sumFollow,High verif,Big increase
+Very low subjectivity,High polarity,Late time sent,High numTweets,Low sumRetweets,Low sumFaves,Low sumFollow,High verif,Increase
+Low subjectivity,Low polarity,Early time sent,Very high numTweets,Very high sumRetweets,Very high sumFaves,Very high sumFollow,High verif,Big decrease
+Very high subjectivity,Very high polarity,Very late time sent,Very high numTweets,Very high sumRetweets,Very high sumFaves,Very high sumFollow,Very high verif,Big increase
+Low subjectivity,Very low polarity,Very early time sent,Very high numTweets,High sumRetweets,High sumFaves,Very high sumFollow,Very high verif,Decrease
+Low subjectivity,Low polarity,Early time sent,Very high numTweets,Very high sumRetweets,Very high sumFaves,Very high sumFollow,Very high verif,Increase
+Low subjectivity,Very low polarity,Very early time sent,Very high numTweets,Very high sumRetweets,Very high sumFaves,Very high sumFollow,Very high verif,Decrease
+Low subjectivity,Low polarity,Early time sent,Low numTweets,Very high sumRetweets,Very high sumFaves,Very low sumFollow,Very low verif,Big decrease
+High subjectivity,Low polarity,Early time sent,Low numTweets,High sumRetweets,Very high sumFaves,High sumFollow,Very low verif,Decrease
+Very low subjectivity,Low polarity,Early time sent,High numTweets,Very high sumRetweets,Very high sumFaves,High sumFollow,High verif,Decrease
+Low subjectivity,Low polarity,Early time sent,Low numTweets,High sumRetweets,High sumFaves,Low sumFollow,Very low verif,Increase
+Very high subjectivity,Very high polarity,Very late time sent,Very low numTweets,High sumRetweets,High sumFaves,Low sumFollow,Very low verif,Big increase
+Very low subjectivity,Very high polarity,Very late time sent,Very low numTweets,Very low sumRetweets,Very low sumFaves,Very low sumFollow,Very low verif,Big increase
+Very high subjectivity,Very high polarity,Very late time sent,High numTweets,Low sumRetweets,Very low sumFaves,Very low sumFollow,Very low verif,Decrease
+Low subjectivity,Very low polarity,Very early time sent,Very low numTweets,Very low sumRetweets,Very low sumFaves,Very low sumFollow,Very low verif,Big increase
+Very low subjectivity,Low polarity,Early time sent,Low numTweets,Very low sumRetweets,Very low sumFaves,Very low sumFollow,Very low verif,Big decrease
+High subjectivity,Very high polarity,Very late time sent,Very low numTweets,Very low sumRetweets,Very low sumFaves,Very low sumFollow,High verif,Big decrease
+High subjectivity,Very low polarity,Very early time sent,High numTweets,High sumRetweets,High sumFaves,High sumFollow,High verif,Big decrease
+High subjectivity,Very low polarity,Very early time sent,High numTweets,High sumRetweets,High sumFaves,High sumFollow,Low verif,Decrease
+Very high subjectivity,Very low polarity,Very early time sent,Very high numTweets,Very high sumRetweets,Very high sumFaves,High sumFollow,Low verif,Big decrease
+Very high subjectivity,Very low polarity,Very early time sent,Very high numTweets,Very high sumRetweets,Very high sumFaves,Low sumFollow,Low verif,Big decrease
+High subjectivity,Very low polarity,Very early time sent,High numTweets,High sumRetweets,High sumFaves,Low sumFollow,Low verif,Increase
+Very high subjectivity,Very low polarity,Very early time sent,High numTweets,Low sumRetweets,Low sumFaves,Low sumFollow,Low verif,Decrease
+High subjectivity,High polarity,Late time sent,Very low numTweets,Very low sumRetweets,Very low sumFaves,High sumFollow,Low verif,Increase
+Very low subjectivity,High polarity,Late time sent,Low numTweets,Low sumRetweets,Very low sumFaves,Low sumFollow,Low verif,Decrease
+High subjectivity,Low polarity,Early time sent,High numTweets,Low sumRetweets,Low sumFaves,Low sumFollow,Low verif,Big decrease
+Low subjectivity,High polarity,Late time sent,Low numTweets,Low sumRetweets,Low sumFaves,Very low sumFollow,Low verif,Big increase
+Very high subjectivity,Very high polarity,Very late time sent,Very low numTweets,Low sumRetweets,Low sumFaves,Very low sumFollow,Low verif,Big increase
+Very high subjectivity,Very high polarity,Very late time sent,Very low numTweets,Low sumRetweets,Low sumFaves,High sumFollow,Low verif,Big increase
+High subjectivity,Very high polarity,Very late time sent,High numTweets,High sumRetweets,High sumFaves,Low sumFollow,High verif,Increase
+Very high subjectivity,Very high polarity,Very late time sent,Very low numTweets,Low sumRetweets,Low sumFaves,Very low sumFollow,Very low verif,Big increase
+Very high subjectivity,Very high polarity,Very late time sent,Very low numTweets,Low sumRetweets,Low sumFaves,Low sumFollow,Very low verif,Big decrease
+High subjectivity,High polarity,Late time sent,Very low numTweets,Very low sumRetweets,Very low sumFaves,Low sumFollow,Low verif,Decrease
+High subjectivity,High polarity,Late time sent,High numTweets,Very low sumRetweets,Low sumFaves,Low sumFollow,High verif,Big decrease
+High subjectivity,High polarity,Late time sent,Low numTweets,Very low sumRetweets,Low sumFaves,High sumFollow,High verif,Increase
+Low subjectivity,High polarity,Late time sent,Low numTweets,Very low sumRetweets,Very low sumFaves,High sumFollow,High verif,Big increase
+Very low subjectivity,High polarity,Late time sent,Very low numTweets,Very low sumRetweets,Very low sumFaves,Very low sumFollow,High verif,Increase

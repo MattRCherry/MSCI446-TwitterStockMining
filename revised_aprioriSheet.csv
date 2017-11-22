@@ -1,0 +1,61 @@
+Subj Rank	Pol Rank	Time Rank	numTweets Rank	sumRetweets Rank	sumFaves Rank	sumFollowers Rank	numVerified Rank	change_std
+Very low subjectivity	Low polarity	Early time sent	Very low numTweets	Low sumRetweets	Low sumFaves	Very low sumFollow	Low verif	0.737865293
+Low subjectivity	Very low polarity	Very early time sent	High numTweets	High sumRetweets	High sumFaves	Very high sumFollow	High verif	0.053475496
+High subjectivity	Low polarity	Early time sent	High numTweets	High sumRetweets	High sumFaves	High sumFollow	High verif	-0.092900582
+Very low subjectivity	Low polarity	Early time sent	Very high numTweets	Very high sumRetweets	Very high sumFaves	High sumFollow	Very high verif	0.548973873
+Low subjectivity	Very low polarity	Very early time sent	Very high numTweets	High sumRetweets	High sumFaves	Very high sumFollow	Very high verif	-0.78768476
+Low subjectivity	Low polarity	Early time sent	High numTweets	High sumRetweets	High sumFaves	Very high sumFollow	Very high verif	0.329875915
+Low subjectivity	Very high polarity	Very late time sent	Very high numTweets	Very high sumRetweets	Very high sumFaves	High sumFollow	Very high verif	-0.030791151
+Very low subjectivity	Very low polarity	Very early time sent	Very high numTweets	Very high sumRetweets	Very high sumFaves	Very high sumFollow	Very high verif	-0.096508178
+High subjectivity	High polarity	Late time sent	Very high numTweets	Very high sumRetweets	Very high sumFaves	Very high sumFollow	Very high verif	0.899471359
+Very high subjectivity	High polarity	Late time sent	Very high numTweets	Very high sumRetweets	Very high sumFaves	Very high sumFollow	Very high verif	0.256690204
+Very high subjectivity	High polarity	Late time sent	Very high numTweets	Very high sumRetweets	Very high sumFaves	High sumFollow	Very high verif	-0.814837473
+Low subjectivity	High polarity	Late time sent	Very low numTweets	Low sumRetweets	Low sumFaves	Low sumFollow	Very low verif	-1.290067259
+Very high subjectivity	High polarity	Late time sent	Low numTweets	High sumRetweets	High sumFaves	Very high sumFollow	Very high verif	0.602636773
+Very high subjectivity	Very high polarity	Very late time sent	High numTweets	High sumRetweets	High sumFaves	Very high sumFollow	High verif	0.146910793
+Very high subjectivity	Very high polarity	Very late time sent	Very high numTweets	Very high sumRetweets	High sumFaves	Very high sumFollow	Very high verif	0.146549979
+Very low subjectivity	Low polarity	Early time sent	Low numTweets	High sumRetweets	High sumFaves	High sumFollow	High verif	0.199680122
+Very low subjectivity	Very low polarity	Very early time sent	Low numTweets	Very low sumRetweets	Low sumFaves	Very high sumFollow	Very low verif	-0.189819241
+Low subjectivity	Low polarity	Early time sent	Low numTweets	Very low sumRetweets	Very low sumFaves	Low sumFollow	Very high verif	0.738244306
+Very low subjectivity	High polarity	Late time sent	Low numTweets	Very low sumRetweets	Very low sumFaves	Very low sumFollow	Very low verif	3.284963006
+High subjectivity	Very high polarity	Very late time sent	High numTweets	Low sumRetweets	Very low sumFaves	Very low sumFollow	Very low verif	-2.380394405
+Very low subjectivity	Very low polarity	Very early time sent	Very low numTweets	Very low sumRetweets	Very low sumFaves	Very low sumFollow	Very low verif	0.190059228
+Very low subjectivity	Very low polarity	Very early time sent	Low numTweets	Low sumRetweets	Low sumFaves	High sumFollow	Low verif	-0.315973311
+High subjectivity	Very high polarity	Very late time sent	Very low numTweets	Very low sumRetweets	Very low sumFaves	Very low sumFollow	Low verif	-0.922800532
+Very low subjectivity	Low polarity	Early time sent	Low numTweets	Low sumRetweets	Low sumFaves	Low sumFollow	High verif	0.615998758
+Very low subjectivity	High polarity	Late time sent	High numTweets	Low sumRetweets	Low sumFaves	Low sumFollow	High verif	0.222397144
+Low subjectivity	Low polarity	Early time sent	Very high numTweets	Very high sumRetweets	Very high sumFaves	Very high sumFollow	High verif	-1.690062403
+Very high subjectivity	Very high polarity	Very late time sent	Very high numTweets	Very high sumRetweets	Very high sumFaves	Very high sumFollow	Very high verif	1.084830714
+Low subjectivity	Very low polarity	Very early time sent	Very high numTweets	High sumRetweets	High sumFaves	Very high sumFollow	Very high verif	0.103499081
+Low subjectivity	Low polarity	Early time sent	Very high numTweets	Very high sumRetweets	Very high sumFaves	Very high sumFollow	Very high verif	0.399944535
+Low subjectivity	Very low polarity	Very early time sent	Very high numTweets	Very high sumRetweets	Very high sumFaves	Very high sumFollow	Very high verif	-0.016542396
+Low subjectivity	Low polarity	Early time sent	Low numTweets	Very high sumRetweets	Very high sumFaves	Very low sumFollow	Very low verif	-2.410647791
+High subjectivity	Low polarity	Early time sent	Low numTweets	High sumRetweets	Very high sumFaves	High sumFollow	Very low verif	-0.00991576
+Very low subjectivity	Low polarity	Early time sent	High numTweets	Very high sumRetweets	Very high sumFaves	High sumFollow	High verif	0.1255768
+Low subjectivity	Low polarity	Early time sent	Low numTweets	High sumRetweets	High sumFaves	Low sumFollow	Very low verif	0.366016444
+Very high subjectivity	Very high polarity	Very late time sent	Very low numTweets	High sumRetweets	High sumFaves	Low sumFollow	Very low verif	1.265130726
+Very low subjectivity	Very high polarity	Very late time sent	Very low numTweets	Very low sumRetweets	Very low sumFaves	Very low sumFollow	Very low verif	0.632693471
+Very high subjectivity	Very high polarity	Very late time sent	High numTweets	Low sumRetweets	Very low sumFaves	Very low sumFollow	Very low verif	-0.237201338
+Low subjectivity	Very low polarity	Very early time sent	Very low numTweets	Very low sumRetweets	Very low sumFaves	Very low sumFollow	Very low verif	0.990995765
+Very low subjectivity	Low polarity	Early time sent	Low numTweets	Very low sumRetweets	Very low sumFaves	Very low sumFollow	Very low verif	-0.368934211
+High subjectivity	Very high polarity	Very late time sent	Very low numTweets	Very low sumRetweets	Very low sumFaves	Very low sumFollow	High verif	-3.740899903
+High subjectivity	Very low polarity	Very early time sent	High numTweets	High sumRetweets	High sumFaves	High sumFollow	High verif	-0.702397309
+High subjectivity	Very low polarity	Very early time sent	High numTweets	High sumRetweets	High sumFaves	High sumFollow	Low verif	-0.121077272
+Very high subjectivity	Very low polarity	Very early time sent	Very high numTweets	Very high sumRetweets	Very high sumFaves	High sumFollow	Low verif	-0.706417963
+Very high subjectivity	Very low polarity	Very early time sent	Very high numTweets	Very high sumRetweets	Very high sumFaves	Low sumFollow	Low verif	-1.269570118
+High subjectivity	Very low polarity	Very early time sent	High numTweets	High sumRetweets	High sumFaves	Low sumFollow	Low verif	0.268785165
+Very high subjectivity	Very low polarity	Very early time sent	High numTweets	Low sumRetweets	Low sumFaves	Low sumFollow	Low verif	-0.214010756
+High subjectivity	High polarity	Late time sent	Very low numTweets	Very low sumRetweets	Very low sumFaves	High sumFollow	Low verif	0.161224824
+Very low subjectivity	High polarity	Late time sent	Low numTweets	Low sumRetweets	Very low sumFaves	Low sumFollow	Low verif	-0.214379732
+High subjectivity	Low polarity	Early time sent	High numTweets	Low sumRetweets	Low sumFaves	Low sumFollow	Low verif	-0.362356658
+Low subjectivity	High polarity	Late time sent	Low numTweets	Low sumRetweets	Low sumFaves	Very low sumFollow	Low verif	0.686236042
+Very high subjectivity	Very high polarity	Very late time sent	Very low numTweets	Low sumRetweets	Low sumFaves	Very low sumFollow	Low verif	1.305790751
+Very high subjectivity	Very high polarity	Very late time sent	Very low numTweets	Low sumRetweets	Low sumFaves	High sumFollow	Low verif	0.738145827
+High subjectivity	Very high polarity	Very late time sent	High numTweets	High sumRetweets	High sumFaves	Low sumFollow	High verif	0.224276808
+Very high subjectivity	Very high polarity	Very late time sent	Very low numTweets	Low sumRetweets	Low sumFaves	Very low sumFollow	Very low verif	1.448745035
+Very high subjectivity	Very high polarity	Very late time sent	Very low numTweets	Low sumRetweets	Low sumFaves	Low sumFollow	Very low verif	-0.410606421
+High subjectivity	High polarity	Late time sent	Very low numTweets	Very low sumRetweets	Very low sumFaves	Low sumFollow	Low verif	-0.063714538
+High subjectivity	High polarity	Late time sent	High numTweets	Very low sumRetweets	Low sumFaves	Low sumFollow	High verif	-0.608628684
+High subjectivity	High polarity	Late time sent	Low numTweets	Very low sumRetweets	Low sumFaves	High sumFollow	High verif	0.442139675
+Low subjectivity	High polarity	Late time sent	Low numTweets	Very low sumRetweets	Very low sumFaves	High sumFollow	High verif	0.588782334
+Very low subjectivity	High polarity	Late time sent	Very low numTweets	Very low sumRetweets	Very low sumFaves	Very low sumFollow	High verif	0.262533898
