@@ -10,13 +10,13 @@ field_labels = ['company', 'date', 'numTweets', 'avgSubj', 'avgPol', 'medianTime
                 'sumFavorite', 'sumFollowers', 'numVerified']
 
 # Include the twitter handles you would like to collect data for here
-companies = ['@cisco']
+companies = ['@google', '@intel' '@xerox', '@cisco']
 
 # Add dates from 'm' to 'n' days ago to a list
 # Change the values in 'range(m, n)' to change the search window
 dates = []
 
-for i in range(1, 8):
+for i in range(1, 4):
     dates.append(datetime.today() - timedelta(days=i))
 
 # Create an empty list to collect our training data
