@@ -12,7 +12,7 @@ from sklearn import preprocessing
 # read our dataset from csv
 # use 'csv_dataset_revenue_norm.csv' for revenue-normalized data
 # use 'csv_dataset_followers_norm.csv' for Twitter-followers-normalized data
-df = pd.read_csv('CSV Dataset_Revenue_November22.csv', index_col=False)
+df = pd.read_csv('csv_dataset_follNorm_Nov22.csv', index_col=False)
 
 # isolate the column labels of our explanatory variables
 ev_col_labels = df.columns.values
@@ -31,6 +31,8 @@ for label in ev_col_labels:
 # isolate our explanatory and class variables
 data = df.as_matrix(columns=ev_col_labels)
 cv = df.change_std
+
+# print, for troubleshooting
 print(data)
 print(cv)
 
