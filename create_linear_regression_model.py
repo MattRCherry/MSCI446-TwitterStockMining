@@ -33,8 +33,8 @@ data = df.as_matrix(columns=ev_col_labels)
 cv = df.change_std
 
 # print, for troubleshooting
-print(data)
-print(cv)
+# print(data)
+# print(cv)
 
 # fit a linear regression model
 regr = linear_model.LinearRegression()
