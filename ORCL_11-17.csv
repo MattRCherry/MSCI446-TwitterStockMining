@@ -1,0 +1,2 @@
+company,date,numTweets,avgSubj,avgPol,medianTime,sumRetweet,sumFavorite,sumFollowers,numVerified
+@oracle,2017-11-17,373,0.4779963557443448,-0.23229729311498756,2017-11-17 17:16:07,12069,8476,2531721,10
