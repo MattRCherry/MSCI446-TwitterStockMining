@@ -1,13 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import math
-import pylab as P
-import numpy as np
-
 from sklearn import linear_model
 from sklearn.metrics import r2_score
 from sklearn.metrics import mean_squared_error
-from sklearn import preprocessing
 
 # read our dataset from csv
 # use 'csv_dataset_revenue_norm.csv' for revenue-normalized data
