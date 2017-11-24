@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bcef4e4b-7c5f-424b-b2e5-306a5aeefd52" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ORCL_11-17.csv" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/results_2.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_training_dataset.py" afterPath="$PROJECT_DIR$/generate_training_dataset.py" />
-    </list>
+    <list default="true" id="bcef4e4b-7c5f-424b-b2e5-306a5aeefd52" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="generate_training_dataset.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="generate_training_dataset.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generate_training_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -29,6 +23,16 @@
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AAPL-MSFT-IBM-AMZN-HPC_11-17.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AAPL-MSFT-IBM-AMZN-HPC_11-17.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -497,6 +501,14 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AAPL-MSFT-IBM-AMZN-HPC_11-17.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
