@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # read our dataset from csv
-df = pd.read_csv('csv_dataset_follNorm_Nov22.csv', index_col=False)
+df = pd.read_csv('CSV_Dataset_No_Outliers.csv', index_col=False)
 
 # isolate the column labels of our explanatory variables
 ev_col_labels = df.columns.values
