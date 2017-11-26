@@ -4,19 +4,19 @@ from search_twitter_query import search_twitter_return_pop_ev
 from datetime import datetime, timedelta
 
 # Where to save the csv output
-file_name = 'AAPL-MSFT-IBM-AMZN-HPC_11-17.csv'
+file_name = 'ALL_11-20_to_11-24.csv'
 
 field_labels = ['company', 'date', 'numTweets', 'avgSubj', 'avgPol', 'medianTime', 'sumRetweet',
                 'sumFavorite', 'sumFollowers', 'numVerified']
 
 # Include the twitter handles you would like to collect data for here
-companies = ['@apple', '@microsoft', '@ibm', '@amazon', '@hp']
+companies = ['@amazon', '@apple', '@cisco', '@microsoft', '@google', '@ibm', '@amazon', '@hp', '@oracle', '@xerox']
 
 # Add dates from 'm' to 'n' days ago to a list
 # Change the values in 'range(m, n)' to change the search window
 dates = []
 
-for i in range(6, 7):
+for i in range(1, 6):
     dates.append(datetime.today() - timedelta(days=i))
 
 # Create an empty list to collect our training data

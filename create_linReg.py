@@ -6,8 +6,6 @@ from sklearn.metrics import r2_score
 from sklearn.metrics import mean_squared_error
 
 # read our dataset from csv
-# use 'csv_dataset_revenue_norm.csv' for revenue-normalized data
-# use 'csv_dataset_followers_norm.csv' for Twitter-followers-normalized data
 df = pd.read_csv('csv_dataset_follNorm_Nov22.csv', index_col=False)
 
 # isolate the column labels of our explanatory variables
