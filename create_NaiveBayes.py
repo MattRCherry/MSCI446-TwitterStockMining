@@ -5,13 +5,13 @@ import numpy as np
 from sklearn.model_selection import KFold, cross_val_score
 from sklearn.naive_bayes import MultinomialNB
 
-dataset = pd.read_csv('CSV Dataset_NB_Revenue_Nov23.csv')
+dataset = pd.read_csv('CSV Dataset_NB_Followers_Nov23.csv')
 print(dataset)
 
 # prepare datasets to be fed into the naive bayes model
 #predict stock movement given all given EV's
 CV =  dataset.stock_mvmt.values.reshape((len(dataset.stock_mvmt), 1))
-data = (dataset.ix[:,'avjSubj_std':'numVerified_over_revenue_std'].values).reshape((len(dataset.stock_mvmt), 8))
+data = (dataset.ix[:,'avjSubj_std':'numVerified_over_followers_std'].values).reshape((len(dataset.stock_mvmt), 8))
 
 '''
 #predict grade letter given extra hours
