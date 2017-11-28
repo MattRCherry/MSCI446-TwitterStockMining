@@ -6,7 +6,7 @@ from sklearn.model_selection import KFold, cross_val_score
 
 
 # Start Logistic Regression
-dataset = pd.read_csv('CSV Dataset_LogReg_Revenue_Nov22.csv')
+dataset = pd.read_csv('CSV Dataset_LogReg_Followers_Nov23.csv')
 print(dataset)
 
 # prepare datasets to be fed in the regression model
@@ -40,7 +40,7 @@ print(metrics.confusion_matrix(CV, predicted, labels=["UP","DOWN"]))
 model = LogisticRegression()
 #kf = KFold(len(CV), n_splits=5)
 
-kf = KFold(n_splits=82, shuffle=True, random_state=None)
+kf = KFold(n_splits=10, shuffle=True, random_state=None)
 scores = cross_val_score(model, data, CV.ravel(), cv=kf)
 
 
