@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bcef4e4b-7c5f-424b-b2e5-306a5aeefd52" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AAPL-MSFT-IBM-AMZN-HPC_11-17.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ORCL_11-17.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training Dataset Wkbk.xlsx" afterPath="$PROJECT_DIR$/Training Dataset Wkbk.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_training_dataset.py" afterPath="$PROJECT_DIR$/generate_training_dataset.py" />
-    </list>
+    <list default="true" id="bcef4e4b-7c5f-424b-b2e5-306a5aeefd52" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/intel_11-20_to_11-24.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -587,7 +581,7 @@
     <entry file="file://$PROJECT_DIR$/intel_11-20_to_11-24.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
