@@ -6,7 +6,7 @@ from sklearn.model_selection import KFold, cross_val_score
 
 
 # Start Logistic Regression
-dataset = pd.read_csv('Final datasets/CSV_Revenue_Categorical_Nov27.csv')
+dataset = pd.read_csv('Final datasets/CSV_Revenue_Categorical_NO_Dec1.csv')
 print(dataset)
 
 # prepare datasets to be fed in the regression model
