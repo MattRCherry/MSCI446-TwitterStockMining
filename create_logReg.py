@@ -6,13 +6,13 @@ from sklearn.model_selection import KFold, cross_val_score
 
 
 # Start Logistic Regression
-dataset = pd.read_csv('CSV Dataset_LogReg_Followers_Nov23.csv')
+dataset = pd.read_csv('Final datasets/CSV_Revenue_Categorical_Nov27.csv')
 print(dataset)
 
 # prepare datasets to be fed in the regression model
 # predict stock movement class given all stated EV's
-CV = dataset.stock_mvmt.values.reshape((len(dataset.stock_mvmt), 1))
-data = (dataset.ix[:,'avjSubj_std':'numVerified_over_revenue_std'].values).reshape((len(dataset.stock_mvmt), 8))
+CV = dataset.categorical.values.reshape((len(dataset.categorical), 1))
+data = (dataset.ix[:,'avjSubj_std':'numVerified_over_revenue_std'].values).reshape((len(dataset.categorical), 8))
 
 # Create a KNN object
 LogReg = LogisticRegression()
@@ -21,6 +21,7 @@ LogReg = LogisticRegression()
 LogReg.fit(data, CV.ravel())
 
 # the model
+
 print('Coefficients (m): \n', LogReg.coef_)
 print('Intercept (b): \n', LogReg.intercept_)
 
@@ -44,5 +45,5 @@ kf = KFold(n_splits=10, shuffle=True, random_state=None)
 scores = cross_val_score(model, data, CV.ravel(), cv=kf)
 
 
-print("Accuracy of every fold in 5 fold cross validation: ", abs(scores))
-print("Mean of the 5 fold cross-validation: %0.2f" % abs(scores.mean()))
+print("Accuracy of every fold in 10 fold cross validation: ", abs(scores))
+print("Mean of the 10 fold cross-validation: %0.2f" % abs(scores.mean()))

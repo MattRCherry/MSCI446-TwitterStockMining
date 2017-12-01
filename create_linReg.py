@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error
 # read our dataset from csv
 # use 'csv_dataset_revenue_norm.csv' for revenue-normalized data
 # use 'csv_dataset_followers_norm.csv' for Twitter-followers-normalized data
-df = pd.read_csv('CSV_Followers_Categorical_Nov27.csv', index_col=False)
+df = pd.read_csv('Final datasets/CSV_Followers_Numeric_Nov27_NO.csv', index_col=False)
 
 # isolate the column labels of our explanatory variables
 ev_col_labels = df.columns.values
