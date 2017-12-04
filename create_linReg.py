@@ -4,9 +4,10 @@ import math
 from sklearn import linear_model
 from sklearn.metrics import r2_score
 from sklearn.metrics import mean_squared_error
+import numpy as np
 
 # read our dataset from csv
-df = pd.read_csv('csv_dataset_follNorm_Nov22.csv', index_col=False)
+df = pd.read_csv('CSV_Dataset_No_Outliers.csv', index_col=False)
 
 # isolate the column labels of our explanatory variables
 ev_col_labels = df.columns.values
@@ -17,8 +18,8 @@ data = df.as_matrix(columns=ev_col_labels)
 cv = df.change_std
 
 # print, for troubleshooting
-print(data)
-print(cv)
+# print(data)
+# print(cv)
 
 # fit a linear regression model
 regr = linear_model.LinearRegression()
@@ -41,3 +42,23 @@ R2 = r2_score(cv, predicted_results)
 print("Mean residual sum of squares =", MSE)
 print("RMSE =", RMSE)
 print("R2 =", R2)
+
+# # Plot predicted vs. actual
+# for label in ev_col_labels:
+#     plt.scatter(getattr(df, label), predicted_results, color='green')
+#     plt.scatter(getattr(df, label), cv, color='black')
+#     plt.xlabel(label)
+#     plt.ylabel("change_std")
+#     plt.show()
+
+# plot residuals
+residual_error = cv - predicted_results
+
+for label in ev_col_labels:
+    plt.scatter(getattr(df, label), residual_error, color='black')
+    plt.xlabel(label)
+    plt.ylabel("residual error")
+    plt.show()
+
+print("Mean of residuals =", np.mean(residual_error))
+print("Standard deviation of residuals =", np.std(residual_error))
